@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert</title>
+    <link href="./CSS/bootstrap.min.css"rel="stylesheet">
+    <script src="./JS/bootstrap.min.js"></script>
+   
+</head>
+<body>
+  <div class="container">
+    <!--basic alert start-->
+    <div class="alert alert-success">Alert success</div>
+    <div class="alert alert-info">Alert info</div>
+    <div class="alert alert-warning">Alert warning</div>
+    <div class="alert alert-danger">Alert danger</div>
+    <div class="alert alert-primary">Alert paimary</div>
+    <div class="alert alert-secondary">Alert secondary</div>
+    <div class="alert alert-dark">Alert dark</div>
+
+    <!--basic alert end-->
+    <!--advance alert start-->
+    <div id="liveAlertPlaceholder"></div>
+    <button class="btn btn-primary"id=liveAlertBtn>Show alert button</button>
+   
+     <script>
+       const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+   const appendAlert = (message, type) => {
+     const wrapper = document.createElement('div')
+     wrapper.innerHTML = [
+       `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+       `   <div>${message}</div>`,
+       '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+       '</div>'
+     ].join('')
+   
+     alertPlaceholder.append(wrapper)
+   }
+   
+   const alertTrigger = document.getElementById('liveAlertBtn')
+   if (alertTrigger) {
+     alertTrigger.addEventListener('click', () => {
+       appendAlert('Nice, you triggered this alert message!', 'success')
+     })
+   }
+     </script>
+     <!--advance alert end-->
+      <div class="alert alert-primary alert-dismissable fade show">
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, saepe.</span>
+        <button class="btn-close position-absolute top-1 end-0 p-2" data-bs-dismiss="alert"></button>
+      </div>
+    <!--advance alert start-->
+
+    <!--advance alert end-->
+  </div> 
+  
+
+</body>
+</html>
