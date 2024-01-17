@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse</title>
+    <link href="./CSS/bootstrap.min.css"rel="stylesheet">
+    <script src="./JS/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+      <!--basic vertical collapse start-->
+       <p>
+         <button class="btn btn-primary"data-bs-toggle="collapse"data-bs-target="#collapseID">Collapse</button>
+       </p> 
+       <div style="min-height:120px;">
+         <div class="collapse"id="collapseID">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iure reprehenderit ipsum quam quis delectus minima dicta fugit omnis sequi!</p>  
+      </div>
+      <br><br><br>
+     
+        <!--basic vertical collapse end-->
+        <!--vertical collapse start-->
+        <p>
+         <button class="btn btn-primary"data-bs-toggle="collapse"data-bs-target="#collapseID-2">Collapse</button>
+         <div style="min-height:120px">
+            <div class="card card-body collapse"id="collapseID-2">
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus est veniam, laborum ad modi accusantium recusandae ipsum veritatis fuga alias.
+               </p>
+            </div>
+         </div>
+        </p>
+        <!--vertical collapse end-->
+        <!--horizontal collapse start-->
+        <p>
+         <button class="btn btn-primary"data-bs-toggle="collapse"data-bs-target="#collapseID-3">collapse</button>
+        </p>
+        <div style="min-height:100px">
+         <div class="collapse collapse-horizontal"id="collapseID-3">
+            <div class="card card-body"style="width:300px;">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nulla qui hic magni saepe suscipit neque aliquam ullam sed dolorem!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nulla qui hic magni saepe suscipit neque aliquam ullam sed dolorem!</p>
+            </div>
+         </div>
+      </div>
+        <!--horizontal collapse end-->
+    </div>
+</body>
+</html>
