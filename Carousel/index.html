@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link href="./CSS/bootstrap.min.css"rel="stylesheet">
+    <script src="./Js/bootstrap.min.js"></script>
+    <style>
+      img{
+        height:700px;
+        margin-top:10px;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <!--basic example start-->
+     <div id="carouselID"class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./Image/img-1.jpg"alt=""class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="./Image/Img-2.jpg"alt=""class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="./Image/Img-3.jpg"alt=""class="d-block w-100">
+        </div>
+        <button class="carousel-control-prev"type="button"data-bs-target="#carouselID"data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselID" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+     </div>
+      <!--basic example end-->
+
+      <!--indicator start-->
+      <div id="carouselID-1"class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselID-1" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carouselID-1" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carouselID-1" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Image/img-1.jpg"alt=""class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="./Image/Img-2.jpg"alt=""class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="./Image/Img-3.jpg"alt=""class="d-block w-100">
+          </div>
+          <button class="carousel-control-prev"type="button"data-bs-target="#carouselID-1"data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselID-1" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+       </div>
+      
+       <!--indicator end-->
+
+       <!--caption start-->
+       <div id="carouselID-2"class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselID-2" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carouselID-2" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carouselID-2" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Image/img-1.jpg"alt=""class="d-block w-100">
+            <div class="carousel-caption">
+              <h1>Fisrt slide</h1>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, impedit ipsum totam aliquid quia expedita officiis, nemo iure quidem ipsam temporibus?</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Image/Img-2.jpg"alt=""class="d-block w-100">
+            <div class="carousel-caption">
+            <h1>Second Slide</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, impedit ipsum totam aliquid quia expedita officiis, nemo iure quidem ipsam temporibus?</p>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Image/Img-3.jpg"alt=""class="d-block w-100">
+            <div class="carousel-caption">
+            <h1>Third Slide</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, impedit ipsum totam aliquid quia expedita officiis, nemo iure quidem ipsam temporibus?</p>
+          </div>
+          </div>
+          <button class="carousel-control-prev"type="button"data-bs-target="#carouselID-2"data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselID-2" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+       </div>
+
+       <!--caption end-->
+
+       <!--crossfade start-->
+       <div id="carouselID-3"class="carousel slide carousel-fade">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselID-3" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carouselID-3" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carouselID-3" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Image/img-1.jpg"alt=""class="d-block w-100">
+            <div class="carousel-caption">
+              <h1>Fisrt slide</h1>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, impedit ipsum totam aliquid quia expedita officiis, nemo iure quidem ipsam temporibus?</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Image/Img-2.jpg"alt=""class="d-block w-100">
+            <div class="carousel-caption">
+            <h1>Second Slide</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, impedit ipsum totam aliquid quia expedita officiis, nemo iure quidem ipsam temporibus?</p>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Image/Img-3.jpg"alt=""class="d-block w-100">
+            <div class="carousel-caption">
+            <h1>Third Slide</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, impedit ipsum totam aliquid quia expedita officiis, nemo iure quidem ipsam temporibus?</p>
+          </div>
+          </div>
+          <button class="carousel-control-prev"type="button"data-bs-target="#carouselID-3"data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselID-3" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+       </div>
+
+       <!--crossfade end-->
+
+  </div>
+</body>
+</html>
